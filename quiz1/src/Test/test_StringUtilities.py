@@ -16,9 +16,9 @@ class TestMathUtilites(TestCase):
         actual: str = self.test_string_utilities.return_string(expected)
         self.assertEqual(expected, actual)
 
-    def test_concatinate(self):
+    def test_concatenate(self):
         expected: str = "something_else"
-        actual: str = self.test_string_utilities.concatinate_string("something_", "else")
+        actual: str = self.test_string_utilities.concatenate_string("something_", "else")
         self.assertEqual(expected, actual)
 
     def test_reverse_string(self):

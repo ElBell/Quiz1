@@ -2,7 +2,7 @@ from unittest import TestCase
 from MathUtilities import MathUtilites
 
 
-class TestMathUtilites(TestCase):
+class TestMathUtilities(TestCase):
     def setUp(self):
         self.test_math_utilities: MathUtilites = MathUtilites()
 

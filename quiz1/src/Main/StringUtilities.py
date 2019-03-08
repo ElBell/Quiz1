@@ -1,20 +1,26 @@
 
 class StringUtilities:
-    def return_string(self, string: str) -> str:
+    @staticmethod
+    def return_string(string: str) -> str:
         return string
 
-    def concatinate_string(self, string1: str, string2: str) -> str:
+    @staticmethod
+    def concatenate_string(string1: str, string2: str) -> str:
         return string1 + string2
 
-    def reverse_string(self, string: str) -> str:
+    @staticmethod
+    def reverse_string(string: str) -> str:
         return string[::-1]
 
-    def get_middle_character(self, string: str) -> str:
-
+    @staticmethod
+    def get_middle_character(string: str) -> str:
         return string[int(len(string)/2)]
 
-    def remove_final_character(self, string: str) -> str:
-        return string[:len(string)-1]
+    @staticmethod
+    def remove_final_character(string: str) -> str:
+        return string[:-1]
 
-    def get_last_word(self, string: str) -> str:
+    @staticmethod
+    def get_last_word(string: str) -> str:
         return string.split()[-1]
+

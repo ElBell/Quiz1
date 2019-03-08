@@ -1,16 +1,20 @@
 
 class MathUtilites:
 
-    def add(self, basevalue: int, valueToAdd: int) -> int:
-        return basevalue + valueToAdd
+    @staticmethod
+    def add(base_value: int, value_to_add: int) -> int:
+        return base_value + value_to_add
 
-    def half(self, basevalue: int) -> float:
-        return basevalue/2
+    @staticmethod
+    def half(base_value: int) -> float:
+        return base_value/2
 
-    def isOdd(self, value: int) -> bool:
+    @staticmethod
+    def is_odd(value: int) -> bool:
         return value % 2 != 0
 
-    def square(self, value: int) -> int:
+    @staticmethod
+    def square(value: int) -> int:
         return value * value
 
 
